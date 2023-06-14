@@ -1,11 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+<div style="background-color: #42A5F5" class="container">
+    <div style="background-color: #42A5F5" class="row justify-content-center">
+        <div style="background-color: #42A5F5" class="col-md-8">
+            <div style="background-color: #42A5F5" class="card">
+
+                <div class="text-center">
+                    <img src="{{ asset('img/health.png') }}" width="200" height="80" alt="" srcset="">
+                </div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,7 +17,14 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                        <a href="" class="btn btn-primary">Start Date</a>
+                        <a href="" class="btn btn-primary">Start Date</a>
+                        <a href="" class="btn btn-primary">Start Date</a>
+
+                    <div class="form-group text-center mt-3">
+                        <a href="" class="btn btn-danger">Make Appointment</a>
+                    </div>
+
                 </div>
             </div>
         </div>

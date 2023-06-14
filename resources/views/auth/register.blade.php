@@ -1,11 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+    <div style="background-color: #42A5F5" class="container">
+        <div class="row justify-content-center">
+            <div style="background-color: #42A5F5" class="col-md-8">
+                <div style="background-color: #42A5F5" class="card">
+
+                    <div class="text-center mt-3">
+                        <img src="{{ asset('img/health.png') }}" width="200" height="80" alt="" srcset="">
+                    </div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
