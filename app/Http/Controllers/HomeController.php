@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Appointment;
+use App\Models\Presc;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -24,5 +27,18 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
+    }
+
+    public function reports()
+    {
+
+        $usersTotal = User::count();
+        $appointments = Appointment::count();
+        $prescs = Presc::count();
+
+        return view('reports', compact('usersTotal', 'appointments','prescs'));
+
+
+//        return view('reports')->users;
     }
 }

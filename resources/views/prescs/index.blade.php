@@ -26,11 +26,10 @@
                             <tbody>
                             @foreach($prescs as $presc)
                                 <tr>
-                                    <th scope="row">{{ $presc->date }}</th>
-                                    <td>{{ $presc->time }}</td>
-                                    <td>{{ $presc->purpose }}</td>
-                                    <td>{{ $presc->doctor }}</td>
-                                    <td>{{ $presc->status }}</td>
+                                    <th scope="row">{{ $presc->medication }}</th>
+                                    <td>{{ $presc->dosage }}</td>
+                                    <td>{{ $presc->frequency }}</td>
+                                    <td>{{ $presc->duration }}</td>
                                 </tr>
                             @endforeach
 

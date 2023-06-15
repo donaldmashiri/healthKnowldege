@@ -6,6 +6,8 @@
             <div style="background-color: #42A5F5" class="col-md-8">
                 <div style="background-color: #42A5F5" class="card">
 
+                    <h1 class="text-white">Create Appointment</h1>
+
                     <div class="text-center">
                         <img src="{{ asset('img/health.png') }}" width="200" height="80" alt="" srcset="">
                     </div>

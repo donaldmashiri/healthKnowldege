@@ -17,15 +17,12 @@
                         </div>
                     @endif
 
-                        <a href="" class="btn btn-primary">Start Date</a>
-                        <a href="" class="btn btn-primary">Start Date</a>
-                        <a href="" class="btn btn-primary">Start Date</a>
+                        @if(Auth::user()->role === "admin")
+                    <h1 class="text-center text-white">Doctor Panel</h1>
+                        @else
+                            <h1 class="text-center text-white">Patient Panel</h1>
+                        @endif
 
-                    <div class="form-group text-center mt-3">
-                        <a href="" class="btn btn-danger">Make Appointment</a>
-                    </div>
-
-                </div>
             </div>
         </div>
     </div>
